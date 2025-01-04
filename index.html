@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yudha - Portfolio</title>
+
+  <!-- - favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!-- - custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- font awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/foto_profile.png" alt="FX. Bima Yudha Pratama" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="FX. Bima Yudha Pratama">FX. Bima Yudha P.</h1>
+          <p class="title">Web developer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:fx.bima.yudha.pratama@gmail.com" class="contact-link">fx.bima.yudha.pratama@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="http://wa.me/6283160890310" class="contact-link">+6283160890310</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="2002-20-02">Feabruary 20, 2002</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Github</p>
+              <a href="https://github.com/Yudhass" class="contact-link">Yudhass</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Lampung</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://dev.to/yudhadevelops" class="social-link">
+              <i class="fab fa-dev"></i>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/fx-bima-yudha-pratama-1117b5227" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/yudhas____/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Saya seorang Backend Developer dari Lampung, yang mengkhususkan diri dalam Laravel, baik untuk aplikasi web
+            tradisional maupun pengembangan API. Dengan pengalaman luas dalam menciptakan sistem yang tangguh dan dapat
+            diskalakan, saya gemar memecahkan masalah yang rumit dan memberikan solusi yang efisien dan berkualitas
+            tinggi.
+          </p>
+
+          <p>
+            Selama bertahun-tahun, saya telah mengasah keterampilan saya dalam mengembangkan dan mengelola sistem
+            backend yang komprehensif, dengan fokus pada memastikan fungsionalitas, keamanan, dan kinerja. Salah satu
+            proyek penting saya melibatkan pembuatan sistem informasi berbasis API untuk mengelola respons bencana alam
+            menggunakan Laravel. Proyek ini memerlukan integrasi data yang lancar, pembaruan waktu nyata, dan keandalan
+            tinggi, yang semuanya berhasil saya terapkan.
+          </p>
+          <p>
+            Pendekatan saya terhadap pengembangan menekankan kode yang bersih, penanganan data yang efisien, dan praktik
+            keamanan yang tangguh. Saya senang berkolaborasi dengan tim untuk mewujudkan ide-ide inovatif dan memastikan
+            bahwa produk akhir tidak hanya memenuhi tetapi juga melampaui harapan klien. Sasaran saya adalah menciptakan
+            sistem yang tidak hanya kuat dan andal tetapi juga ramah pengguna dan mudah dirawat.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Backend Development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Development</h4>
+                <p class="service-item-text">
+                  Keahlian dalam logika sisi server, manajemen basis data, dan pengembangan API, memastikan aplikasi web
+                  yang tangguh dan skalabel.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/database.svg" alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Database Design & Management</h4>
+                <p class="service-item-text">
+                  Terampil dalam merancang, mengimplementasikan, dan mengelola basis data menggunakan teknologi SQL dan
+                  NoSQL, memastikan integritas dan kinerja data.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/api.svg" alt="API Development & Integration icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">API Development & Integration</h4>
+
+                <p class="service-item-text">
+                  Mahir dalam membuat dan mengintegrasikan RESTful dan GraphQL API, memfasilitasi komunikasi yang lancar
+                  antar layanan.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/performa.svg" alt="camera icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Performance Optimization</h4>
+                <p class="service-item-text">
+                  Berfokus pada penerapan praktik terbaik untuk keamanan aplikasi dan mengoptimalkan kinerja untuk
+                  menangani beban lalu lintas tinggi secara efektif.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - Languages and Tools:
+        -->
+
+        <section class="clients">
+          <h3 class="h3 clients-title">Languages and Tools</h3>
+          <ul class="clients-list has-scrollbar">
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/vscode.png" alt="tools">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/github.png" alt="tools">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/js.png" alt="tools">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/php.png" alt="tools">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/python.png" alt="tools">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/postman.png" alt="tools">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Pendidikan</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Sanata Dharma University</h4>
+              <span>2020 — 2024</span>
+              <p class="timeline-text">
+                Saya adalah lulusan Universitas Sanata Dharma, Yogyakarta jurusan Informatika, dengan pengalaman luas
+                dalam pengembangan aplikasi menggunakan Java, Laravel, PHP, Python, dan MySQL. Saya memiliki kemampuan
+                analisis yang baik serta mampu bekerja secara efektif baik secara mandiri maupun dalam tim. Saya
+                berkomitmen untuk terus belajar dan mengembangkan keterampilan saya demi mencapai hasil yang optimal
+                dalam setiap proyek yang saya kerjakan.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Pengalaman</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Asisten Dosen Matakuliah Proyek Informatika • Universitas Sanata Dharma
+              </h4>
+              <span>
+                Agustus 2023 - Desember 2023
+              </span>
+              <p class="timeline-text">
+                Sebagai Asisten Dosen untuk Mata Kuliah Proyek Informatika, saya bertanggung jawab mengajarkan siswa
+                dasar-dasar pemrograman situs web. Saya juga memberikan penilaian terhadap proyek yang dibuat oleh
+                siswa, serta memberikan instruksi dan panduan kepada siswa yang membutuhkan bantuan tambahan.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Backend Web Developer • YAKKUM Emergency Unit
+              </h4>
+              <span>
+                Juli 2022 - Februari 2023
+              </span>
+              <p class="timeline-text">
+                Selama magang di YAKKUM Emergency Unit, saya bertanggung jawab untuk membuat aplikasi database relawan
+                untuk tanggap darurat bencana alam. Dalam peran ini, saya memegang penuh posisi back-end menggunakan
+                Framework PHP Laravel, merancang dan mengimplementasikan struktur database menggunakan MySQL, serta
+                mengembangkan API untuk mengintegrasikan sistem dengan aplikasi front-end. Saya bekerja sama dengan tim
+                front-end untuk memastikan integrasi yang mulus antara back-end dan front-end. Selain itu, saya menulis
+                dokumentasi teknis untuk pengembangan dan pemeliharaan aplikasi, menyediakan dukungan teknis, serta
+                melakukan debugging dan troubleshooting untuk masalah yang muncul. Saya juga mengimplementasikan
+                keamanan data untuk melindungi informasi sensitif relawan.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Pengajar Informatika Belajar Mengenai Algoritma Dan Pemrograman • Himpunan Mahasiswa Informatika
+                Universitas Sanata Dharma
+              </h4>
+              <span>
+                September 2022 - November 2022
+              </span>
+              <p class="timeline-text">
+                Sebagai pengajar untuk mata kuliah Algoritma dan Pemrograman di Himpunan Mahasiswa Informatika
+                Universitas Sanata Dharma dari September 2022 hingga November 2022, saya bertanggung jawab mengajarkan
+                siswa tentang algoritma dan dasar-dasar pemrograman. Saya juga memberikan instruksi dan bimbingan kepada
+                siswa untuk membantu mereka memahami materi dengan lebih baik dan menyelesaikan tugas-tugas mereka.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Asisten Dosen Mata Kuliah Rekayasa Perangkat Lunak • Universitas Sanata Dharma
+              </h4>
+              <span>
+                Februari 2022 - Juli 2022
+              </span>
+              <p class="timeline-text">
+                Sebagai asisten dosen untuk mata kuliah Rekayasa Perangkat Lunak di Universitas Sanata Dharma dari
+                Februari 2022 hingga Juli 2022, saya bertanggung jawab mengajarkan siswa dasar-dasar pembuatan aplikasi
+                serta cara membuat dokumentasi yang baik untuk aplikasi. Saya juga memberikan penilaian terhadap proyek
+                yang dibuat oleh siswa dan memberikan instruksi serta bimbingan kepada siswa yang membutuhkan bantuan
+                tambahan.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Asisten Dosen Mata Kuliah Pemrograman Berbasis Platform • Universitas Sanata Dharma
+              </h4>
+              <span>
+                Februari 2022 - Juli 2022
+              </span>
+              <p class="timeline-text">
+                Sebagai Lecturer's Assistant untuk mata kuliah Platform Based Programming di Universitas Sanata Dharma
+                dari Februari 2022 hingga Juli 2022, saya bertanggung jawab mengajarkan siswa tentang dasar-dasar
+                pemrograman situs web. Saya juga memberikan instruksi dan bimbingan kepada siswa yang membutuhkan
+                bantuan tambahan, serta memberikan penilaian terhadap proyek yang dibuat oleh siswa.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Asisten Dosen Mata Kuliah Algoritma Dan Pemrograman • Universitas Sanata Dharma
+              </h4>
+              <span>
+                Agustus 2021 - Desember 2021
+              </span>
+              <p class="timeline-text">
+                Sebagai Lecturer's Assistant untuk mata kuliah Programming and Algorithms di Universitas Sanata Dharma
+                dari Agustus 2021 hingga Desember 2021, saya bertanggung jawab mengajar siswa tentang algoritma dan
+                dasar-dasar pemrograman. Saya juga memberikan instruksi dan bimbingan kepada siswa, serta menilai
+                tugas-tugas siswa yang memerlukan bantuan tambahan.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Full Stack Web Developer • Rumah sakit mata Dr. YAP
+              </h4>
+              <span>
+                April 2021 - September 2024
+              </span>
+              <p class="timeline-text">
+                Sebagai Full Stack Web Developer di salah satu proyek aplikasi yang di bangun untuk manajemen alat medis
+                di Rumah Sakit Mata Dr. YAP, saya bertanggung jawab merancang dan mengimplementasikan struktur database
+                menggunakan MySQL, mengintegrasikan Back-End dan Front-End, serta melakukan optimasi kinerja aplikasi
+                untuk memastikan responsivitas dan kehandalan dalam kondisi darurat. Saya juga mengimplementasikan
+                keamanan data untuk melindungi informasi sensitif pengguna dan membangun aplikasi menggunakan Framework
+                PHP Laravel.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Developer Augmented Reality JawaLens • Universitas Sanata Dharma
+              </h4>
+              <span>
+                Februari 2023 - Juli 2024
+              </span>
+              <p class="timeline-text">
+                Dalam pekerjaan saya, saya bertanggung jawab untuk membuat konsep awal aplikasi Augmented Reality (AR)
+                bernama JawaLens. Saya juga bertugas membuat marker dari aksara Jawa cetak yang terdapat pada halaman di
+                buku "Hamong Tani." Selain itu, saya mendistribusikan aplikasi JawaLens kepada masyarakat umum bersama
+                tim saya.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Keahlian saya</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Database design</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Laravel Api</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Javascript</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">ExpressJs Api</h5>
+                <data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Java Spring Boot</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://simalmed.yudhadev.my.id/login">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.png" alt="Medical" loading="lazy">
+                </figure>
+                <h3 class="project-title">Medical</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://s.id/JavaLens">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-2.png" alt="brawlhalla" loading="lazy">
+                </figure>
+                <h3 class="project-title">AR JawaLens</h3>
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://s.id/ARPentingsari">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-3.png" alt="brawlhalla" loading="lazy">
+                </figure>
+                <h3 class="project-title">AR Pentingsari</h3>
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://s.id/logsVerARBringSu">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+                <h3 class="project-title">AR Bringin Sukarno</h3>
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://jawalearn.streamlit.app/">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-6.png" alt="brawlhalla" loading="lazy">
+                </figure>
+                <h3 class="project-title">AR JawaLearn</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://relawan.yeu.or.id/">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-5.png" alt="summary" loading="lazy">
+                </figure>
+                <h3 class="project-title">Humanity</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #BLOG
+      -->
+
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.497635346978!2d110.422026!3d-7.752757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59a9458324c7%3A0x358e05ec81c9f700!2sKos+Putra+Pak+Walidi!5e0!3m2!1sen!2sid!4v1676517218183!5m2!1sen!2sid"
+              width="600" height="450" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
